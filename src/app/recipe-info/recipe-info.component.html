@@ -1,0 +1,25 @@
+<!-- Recipe Breakdown -->
+
+<p *ngIf="!recipe">Recipe not found :(</p>
+<div *ngIf="recipe" class="info-container">
+  <h1>{{ recipe.label }}</h1>
+  <div class="top-container">
+    <img src="{{ recipe.image }}" alt="picture of {{ recipe.label }}">
+    <ul class="details-list">
+      <li>Serves {{ recipe.yield }}</li>
+      <li>Calories per serving: {{ (recipe.calories / recipe.yield).toFixed(0) }}</li>
+      <!-- Taglist is constructed via use of ngFor and ngIf on spans
+      Write the name of the tag for each one, and only add the preceding ", " if the tag isn't the first in the list -->
+      <li>Tags: 
+        <span *ngFor="let tag of recipe.healthLabels; index as i"><span *ngIf="i !== 0">, </span>{{tag}}</span>
+      </li>
+      <li><a href="{{ recipe.url }}">Original Recipe</a></li>
+    </ul>
+  </div>
+  <div class="ingredients-container">
+    <h3>Ingredients</h3>
+    <ul class="ingredients-list">
+      <li *ngFor="let ingredient of recipe.ingredientLines">{{ ingredient }}</li>
+    </ul>
+  </div>
+</div>

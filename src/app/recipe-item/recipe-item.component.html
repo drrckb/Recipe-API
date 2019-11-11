@@ -1,0 +1,13 @@
+<div class="recipe-container">
+        <!-- ngClass used to set the icon depending on if clicking will add or remove it -->
+        <i class="fas"
+          [ngClass]="{ 'fa-trash': favorites.contains(recipe), 'fa-heart': !favorites.contains(recipe) }"
+          (click)="toggleFavorite()"></i>
+      
+        <!-- click the image to go to the recipe detail -->
+        <img src="{{ recipe.image }}"
+          alt="picture of {{ recipe.label }}"
+          (click)="goToRecipeDetail()">
+        <p>{{ recipe.label }}</p>
+        <p>Serves {{ recipe.yield }}</p>
+      </div>

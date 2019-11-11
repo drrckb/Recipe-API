@@ -1,0 +1,74 @@
+<!-- Home Page -->
+
+<form #searchForm="ngForm" (ngSubmit)="searchRecipes(searchForm)">
+ 
+    <mat-form-field>
+      <input matInput placeholder="e.g. soup, salad, pizza" type="text" name="query" [(ngModel)]="searchWord">
+    </mat-form-field>
+  
+    <mat-accordion>
+      <mat-expansion-panel [(ngModel)]="dietaryRestriction">
+        <mat-expansion-panel-header>
+          <mat-panel-title class="droplist">
+            Diet Labels
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+     
+        <div class="diets">
+          <mat-checkbox [value]="dairy-free">
+          <span class="diet-title">Dairy-Free</span>
+            <span class="diet-info">No dairy; no lactose</span>
+          </mat-checkbox>
+        </div>
+        <div class="diets">
+          <mat-checkbox [value]="gluten-free">
+          <span class="diet-title">Gluten-Free</span>
+            <span class="diet-info">No ingredients containing gluten</span>
+          </mat-checkbox>
+        </div>
+        <div class="diets">
+          <mat-checkbox [value]="vegetarian">
+          <span class="diet-title">Vegetarian</span>
+            <span class="diet-info">No meat, poultry, or fish</span>
+          </mat-checkbox>
+        </div>
+        <div class="diets">
+          <mat-checkbox [value]="vegan">
+          <span class="diet-title">Vegan</span>
+            <span class="diet-info">No meat, poultry, fish, dairy, eggs, or honey</span>
+          </mat-checkbox>
+        </div>
+        <div class="diets">
+          <mat-checkbox [value]="low-carb">
+          <span class="diet-title">Low-Carb</span>
+            <span class="diet-info">Less than 20% of total calories from carbs</span>
+          </mat-checkbox>
+        </div>
+     
+    
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title class="droplist">
+            Calories
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+     
+
+        <mat-slider
+        thumbLabel
+        [displayWith]="formatLabel"
+        tickInterval="100"
+        min="1"
+        max="2000"
+        ></mat-slider>
+     
+       
+      </mat-expansion-panel>
+    </mat-accordion>
+  
+    <button mat-button routerLink="/results">Submit</button>
+  
+  
+  
+  </form>

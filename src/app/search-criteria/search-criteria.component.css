@@ -1,0 +1,60 @@
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  mat-form-field {
+    width: 470px;
+  } ::ng-deep .mat-form-field-empty.mat-form-field-label {
+      color: #BFBFBF;
+    } ::ng-deep .mat-focused .mat-form-field-label {
+        color: #DF7039 !important;
+      } ::ng-deep.mat-form-field-underline {
+          background-color: #0760B4 !important;
+        } ::ng-deep.mat-form-field-ripple {
+            background-color: #DF7039 !important;
+          }  
+  
+  .droplist {
+    color: #0760B4
+  }
+  
+  .diets {
+    margin-bottom: 5px;
+  } ::ng-deep .mat-checkbox-checked .mat-checkbox-background, .mat-checkbox-indeterminate .mat-checkbox-background {
+      background-color: #F34032 !important;
+    }  ::ng-deep .mat-checkbox:not(.mat-checkbox-disabled) .mat-checkbox-ripple .mat-ripple-element {
+          background-color: #F34032 !important;
+        }
+  
+  .diet-title {
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 10px;
+    color: #DF7039;
+  }
+  
+  .diet-info {
+    color: #D3D3D3;
+  }
+  
+  mat-slider {
+    width: 400px;
+  } ::ng-deep .mat-accent .mat-slider-track-fill {
+      background-color: #F34032;
+    } ::ng-deep .mat-accent .mat-slider-thumb {
+        background-color: #F34032;
+      } ::ng-deep .mat-accent .mat-slider-thumb-label {
+          background-color: #F34032;
+        }
+  
+  button {
+    margin-top: 50px;
+    border: 1px solid #D3D3D3;
+    color: #0760B4;
+    width: 150px;
+  }

@@ -1,0 +1,9 @@
+<!-- Results Page -->
+
+<div class="component-container">
+    <p class="result">Results</p>
+    <p *ngIf="recipeResults.length === 0">Nothing found :(</p>
+    <div class="recipe-results-container">
+        <recipe-item *ngFor="let recipe of recipeResults" [recipe]="recipe"></recipe-item>
+    </div>
+</div>
