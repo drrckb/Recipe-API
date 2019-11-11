@@ -1,9 +1,8 @@
 
 .component-container {
-	
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; 
+  flex-flow: row; 
 }
 
 p {

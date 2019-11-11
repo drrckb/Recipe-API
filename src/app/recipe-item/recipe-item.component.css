@@ -20,21 +20,38 @@
     cursor: pointer; 
     position: absolute;
     bottom: 0;
-    right: 10px;
+    right: 15px;
     transform: translate(50%, -25%);
 }
 
 img {
   width: 100%;
-  heigh: 50%;
+  height: 50%;
   border-radius: 10px;
   padding: 20px;
   cursor: pointer;
 }
 
+/*
+::ng-deep .mat-button{
+    height:10px !important;
+    width:10px !important;
+    font-size:10px !important;
+}
+*/
+
+mat-button {
+	width: 8px;
+}
+
+
 mat-card-content {
 	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
 	margin-bottom: 20px;
+	height: 80%;
+	width: 80%;
 }
 
 p {
