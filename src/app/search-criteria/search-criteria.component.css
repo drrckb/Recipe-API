@@ -1,3 +1,13 @@
+body {
+/*
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+*/
+	margin: 0;
+}
+
 form {
     display: flex;
     justify-content: center;
@@ -5,9 +15,31 @@ form {
     flex-direction: column;
     min-height: 100vh;
   }
+
+.logo-container {
+	margin-top: 60px;
+	display: flex;
+	justify-content: center; 
+	align-content: center;
+	align-items: center;
+	text-align: center;
+	z-index: 10;
+}
+
+.logo {
+	align-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 60px;
+	z-index: 10;
+	justify-content: center;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+}
   
   mat-form-field {
-    width: 470px;
+    width: 450px;
   } ::ng-deep .mat-form-field-empty.mat-form-field-label {
       color: #BFBFBF;
     } ::ng-deep .mat-focused .mat-form-field-label {
@@ -28,7 +60,8 @@ form {
       background-color: #F34032 !important;
     }  ::ng-deep .mat-checkbox:not(.mat-checkbox-disabled) .mat-checkbox-ripple .mat-ripple-element {
           background-color: #F34032 !important;
-        }
+        } 
+
   
   .diet-title {
     margin-left: 15px;
@@ -58,3 +91,13 @@ form {
     color: #0760B4;
     width: 150px;
   }
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.radio{
+  margin: 5px;
+}

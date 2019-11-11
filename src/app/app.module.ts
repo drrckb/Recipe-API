@@ -11,6 +11,10 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCardModule } from '@angular/material/card';
 import { MatRippleModule } from '@angular/material/core';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
+import { MatRadioModule } from '@angular/material/radio';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ApiService } from './api.service';
@@ -45,7 +49,11 @@ import { FavoritesService } from './favorites.service';
     MatButtonModule,
 	MatSelectModule,
 	MatCardModule,
-	MatRippleModule
+	MatRippleModule,
+	MatDialogModule,
+	MatToolbarModule,
+	MatListModule,
+	MatRadioModule
   ],
   providers: [ ApiService, SearchService, FavoritesService ],
   bootstrap: [AppComponent]

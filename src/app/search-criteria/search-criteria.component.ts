@@ -9,7 +9,8 @@ import { MatAccordion } from '@angular/material';
   styleUrls: ['./search-criteria.component.css']
 })
 export class SearchCriteriaComponent implements OnInit {
-
+	
+	
   dietOptions: any[] = [
 	{ name: "Vegetarian", value: "vegetarian" },
     { name: "Vegan", value: "vegan" },
@@ -29,8 +30,10 @@ export class SearchCriteriaComponent implements OnInit {
       return Math.round(value / 2001) + 'k';
     }
 
-    return value;
+    return value;  
   }
+	
+	
 
   constructor(private search: SearchService, private router: Router) {
     this.accordionList = [

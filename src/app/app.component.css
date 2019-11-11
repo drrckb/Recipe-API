@@ -1,11 +1,15 @@
-nav {
-	display: flex;
-	flex-direction: row;
-	margin: 20px;
+.nav {
 	
+/*	margin: 20px;*/
+	justify-content: space-between;
+	box-shadow: 0px 8px 6px -6px black;
+	background-color: #0760B4;
 }
 
 a {
+	color: white;
+	text-decoration: none;
 	margin-left: 20px;
+	margin-right: 20px;
 }
 

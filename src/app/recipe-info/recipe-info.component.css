@@ -1,0 +1,16 @@
+body {
+	vh: 100%;
+	margin: 0;
+}
+.info-container {
+  max-width: 400px;
+  height: 80%;
+}
+
+.card-container {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	
+}

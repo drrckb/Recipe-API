@@ -1,0 +1,17 @@
+
+.component-container {
+	
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+p {
+	
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+
+

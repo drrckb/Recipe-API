@@ -2,7 +2,7 @@
 
 <div class="component-container">
         <p class="favorites">Favorites</p>
-        <p *ngIf="favorites.length === 0">No favorites found :(</p>
+        <p *ngIf="favorites.length === 0">Nothing to see here</p>
         <div class="recipe-results-container">
           <recipe-item *ngFor="let recipe of favorites" [recipe]="recipe"></recipe-item>
         </div>

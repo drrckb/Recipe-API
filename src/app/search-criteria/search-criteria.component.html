@@ -1,5 +1,11 @@
 <!-- Home Page -->
 
+<div class="logo-container">
+<div class="logo">
+<img src="assets/omnomnom.png" alt="logo">
+</div>	
+</div>
+
 <form #searchForm="ngForm" (ngSubmit)="searchRecipes(searchForm)">
  
     <mat-form-field>
@@ -16,6 +22,33 @@
      
 		  
 		  
+		
+			  
+<!--
+		  <mat-selection-list [(ngModel)]="dietaryRestriction" name="dietaryRestriction">
+  <mat-list-option *ngFor="let option of dietOptions" [value]="option.value">
+    {{ option.name }}
+  </mat-list-option>
+</mat-selection-list>
+-->
+
+		  
+		  
+<mat-radio-group
+	[(ngModel)]="dietaryRestriction"
+	name="dietaryRestriction"			 
+aria-labelledby="diet-restrictions"
+  class="radio-group">
+  <mat-radio-button class="radio" *ngFor="let option of dietOptions" [value]="option.value">
+    {{ option.name }}
+  </mat-radio-button>
+</mat-radio-group>
+
+	  
+		  
+		  
+		  
+<!--
 		  <mat-form-field>
   <mat-label>Dietary Restriction</mat-label>
   <mat-select [(ngModel)]="dietaryRestriction" name="dietaryRestriction">
@@ -24,6 +57,7 @@
     </mat-option>
   </mat-select>
 </mat-form-field>
+-->
 		  
 		  
 <!--
@@ -79,7 +113,8 @@
         </mat-expansion-panel-header>
      
 
-        <mat-slider			
+        <mat-slider	
+		[(ngModel)]="calories"			
 		type="number"
 		name="minCalories"			
         thumbLabel

@@ -1,14 +1,13 @@
 @import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
 
 
-.recipe-container{
+.recipe-container {
     border-radius: 5px;
     margin: 10px;
     height: 280px;
     width: 160px;
     box-shadow: 3px 3px 6px black;
     position: relative;
-
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -17,24 +16,30 @@
 
 .fas {
     font-size: 15px;
-    color:#EE9521;
+    color: #F34032;
     cursor: pointer; 
     position: absolute;
-    top: 0;
-    right: 0;
+    bottom: 0;
+    right: 10px;
     transform: translate(50%, -25%);
 }
 
 img {
   width: 100%;
+  heigh: 50%;
   border-radius: 10px;
   padding: 20px;
   cursor: pointer;
 }
 
+mat-card-content {
+	display: flex;
+	margin-bottom: 20px;
+}
+
 p {
   color: black;
   margin: 10px;
-   padding-left: 10px; 
+  padding-left: 10px; 
   font-family: 'Open Sans Condensed', sans-serif 
 }

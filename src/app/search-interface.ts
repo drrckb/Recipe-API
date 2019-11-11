@@ -2,7 +2,6 @@
 export interface SearchInterface {
     searchWord: string;
     dietaryRestriction?: string;
-//    maxCalories?: number;
     minCalories?: number;
   }
   
