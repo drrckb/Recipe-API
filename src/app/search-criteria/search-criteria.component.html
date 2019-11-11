@@ -3,47 +3,71 @@
 <form #searchForm="ngForm" (ngSubmit)="searchRecipes(searchForm)">
  
     <mat-form-field>
-      <input matInput placeholder="e.g. soup, salad, pizza" type="text" name="query" [(ngModel)]="searchWord">
+      <input matInput placeholder="e.g. soup, salad, pizza" type="text" [(ngModel)]="searchWord" name="searchWord">
     </mat-form-field>
   
     <mat-accordion>
-      <mat-expansion-panel [(ngModel)]="dietaryRestriction">
+      <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title class="droplist">
             Diet Labels
           </mat-panel-title>
         </mat-expansion-panel-header>
      
+		  
+		  
+		  <mat-form-field>
+  <mat-label>Dietary Restriction</mat-label>
+  <mat-select [(ngModel)]="dietaryRestriction" name="dietaryRestriction">
+    <mat-option *ngFor="let option of dietOptions" [value]="option.value">
+      {{option.name}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+		  
+		  
+<!--
+		   <div class="diets">
+          <mat-checkbox *ngFor="let option of dietOptions" [value]="option.value">{{option.name}}</mat-checkbox>
+        </div>
+-->
+		  
+		  
+		  
+<!--		  [(ngModel)]="dietaryRestriction"-->
+		  
+<!--
         <div class="diets">
-          <mat-checkbox [value]="dairy-free">
+          <mat-checkbox [value]="dairy-free" name="dairy-free">
           <span class="diet-title">Dairy-Free</span>
-            <span class="diet-info">No dairy; no lactose</span>
+            <span class="diet-info">No dairy, no lactose</span>
           </mat-checkbox>
         </div>
         <div class="diets">
-          <mat-checkbox [value]="gluten-free">
+          <mat-checkbox [value]="gluten-free" name="gluten-free">
           <span class="diet-title">Gluten-Free</span>
             <span class="diet-info">No ingredients containing gluten</span>
           </mat-checkbox>
         </div>
         <div class="diets">
-          <mat-checkbox [value]="vegetarian">
+          <mat-checkbox [value]="vegetarian" name="vegetarian">
           <span class="diet-title">Vegetarian</span>
             <span class="diet-info">No meat, poultry, or fish</span>
           </mat-checkbox>
         </div>
         <div class="diets">
-          <mat-checkbox [value]="vegan">
+          <mat-checkbox [value]="vegan" name="vegan">
           <span class="diet-title">Vegan</span>
             <span class="diet-info">No meat, poultry, fish, dairy, eggs, or honey</span>
           </mat-checkbox>
         </div>
         <div class="diets">
-          <mat-checkbox [value]="low-carb">
+          <mat-checkbox [value]="low-carb" name="low-carb">
           <span class="diet-title">Low-Carb</span>
             <span class="diet-info">Less than 20% of total calories from carbs</span>
           </mat-checkbox>
         </div>
+-->
      
     
       </mat-expansion-panel>
@@ -55,14 +79,16 @@
         </mat-expansion-panel-header>
      
 
-        <mat-slider
+        <mat-slider			
+		type="number"
+		name="minCalories"			
         thumbLabel
         [displayWith]="formatLabel"
         tickInterval="100"
         min="1"
-        max="2000"
+        max="2000"			
         ></mat-slider>
-     
+<!--     (input)="minCalories($event)"-->
        
       </mat-expansion-panel>
     </mat-accordion>

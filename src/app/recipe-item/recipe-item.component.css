@@ -1,0 +1,40 @@
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+
+
+.recipe-container{
+    border-radius: 5px;
+    margin: 10px;
+    height: 280px;
+    width: 160px;
+    box-shadow: 3px 3px 6px black;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.fas {
+    font-size: 15px;
+    color:#EE9521;
+    cursor: pointer; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -25%);
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+p {
+  color: black;
+  margin: 10px;
+   padding-left: 10px; 
+  font-family: 'Open Sans Condensed', sans-serif 
+}

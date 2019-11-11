@@ -22,25 +22,28 @@ export class ApiService {
     }
 
    
-    if (options.minCalories || options.maxCalories) {
-      let caloriesUrl = "&calories=";
-
-      if (options.minCalories) { 
-        caloriesUrl += options.minCalories.toString();
-
-        if (!options.maxCalories) {
-          caloriesUrl += "+";
-        } else {
-          caloriesUrl += "-"; 
-        }
-      }
-
-      if (options.maxCalories) {
-        caloriesUrl += options.maxCalories.toString();
-      }
-
-      searchUrl += caloriesUrl;
-    }
+	  if (options.minCalories) {
+       searchUrl += `&calories=${options.minCalories}`;
+	  }
+//    if (options.minCalories || options.maxCalories) {
+//      let caloriesUrl = "&calories=";
+//
+//      if (options.minCalories) { 
+//        caloriesUrl += options.minCalories.toString();
+//
+//        if (!options.maxCalories) {
+//          caloriesUrl += "+";
+//        } else {
+//          caloriesUrl += "-"; 
+//        }
+//      }
+//
+//      if (options.maxCalories) {
+//        caloriesUrl += options.maxCalories.toString();
+//      }
+//
+//      searchUrl += caloriesUrl;
+//    }
 
 
     return this.http.get(searchUrl);

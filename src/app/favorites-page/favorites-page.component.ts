@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FavoritesService } from '../favorites.service';
 
 @Component({
-  selector: 'app-favorites-page',
+  selector: 'favorites-page',
   templateUrl: './favorites-page.component.html',
   styleUrls: ['./favorites-page.component.css']
 })

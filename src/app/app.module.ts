@@ -8,7 +8,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSliderModule } from '@angular/material/slider';
-
+import { MatSelectModule } from '@angular/material/select';
+import { MatCardModule } from '@angular/material/card';
+import { MatRippleModule } from '@angular/material/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ApiService } from './api.service';
@@ -40,7 +42,10 @@ import { FavoritesService } from './favorites.service';
     MatInputModule,
     MatCheckboxModule,
     MatSliderModule,
-    MatButtonModule
+    MatButtonModule,
+	MatSelectModule,
+	MatCardModule,
+	MatRippleModule
   ],
   providers: [ ApiService, SearchService, FavoritesService ],
   bootstrap: [AppComponent]

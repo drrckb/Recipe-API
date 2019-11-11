@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { SearchService } from '../search.service';
 
 @Component({
-  selector: 'app-recipe-info',
+  selector: 'recipe-info',
   templateUrl: './recipe-info.component.html',
   styleUrls: ['./recipe-info.component.css']
 })

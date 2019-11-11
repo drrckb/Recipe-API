@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { SearchService } from '../search.service';
 
 @Component({
-  selector: 'app-recipe-results',
+  selector: 'recipe-results',
   templateUrl: './recipe-results.component.html',
   styleUrls: ['./recipe-results.component.css']
 })

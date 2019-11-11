@@ -3,7 +3,7 @@ import { FavoritesService } from '../favorites.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-recipe-item',
+  selector: 'recipe-item',
   templateUrl: './recipe-item.component.html',
   styleUrls: ['./recipe-item.component.css']
 })

@@ -4,18 +4,18 @@ import { Router } from '@angular/router';
 import { MatAccordion } from '@angular/material';
 
 @Component({
-  selector: 'app-search-criteria',
+  selector: 'search-criteria',
   templateUrl: './search-criteria.component.html',
   styleUrls: ['./search-criteria.component.css']
 })
 export class SearchCriteriaComponent implements OnInit {
 
   dietOptions: any[] = [
-    { name: "Dairy-Free", value: "No dairy; no lactose" },
-    { name: "Gluten-Free", value: "No ingredients containing gluten" },
-    { name: "Vegetarian", value: "No meat, poultry, or fish" },
-    { name: "Vegan", value: "No meat, poultry, fish, dairy, eggs, or honey" },
-    { name: "Low-Carb", value: "Less than 20% of total calories from carbs" }
+	{ name: "Vegetarian", value: "vegetarian" },
+    { name: "Vegan", value: "vegan" },
+    { name: "Peanuts", value: "peanut-free" },
+    { name: "Sugar-conscious", value: "sugar-conscious" },
+    { name: "Low-Carb", value: "low-carb" }
   ];
 
   panelOpenState = false;
