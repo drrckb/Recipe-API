@@ -25,6 +25,7 @@ import { RecipeItemComponent } from './recipe-item/recipe-item.component';
 import { SearchCriteriaComponent } from './search-criteria/search-criteria.component';
 import { SearchService } from './search.service';
 import { FavoritesService } from './favorites.service';
+import 'hammerjs';
 
 @NgModule({
   declarations: [
