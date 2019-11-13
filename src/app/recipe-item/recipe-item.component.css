@@ -65,6 +65,7 @@ mat-card-content {
 	margin-bottom: 40px;
 	height: 80%;
 	width: 85%;
+	overflow-y: auto;
 }
 
 p {
@@ -74,6 +75,8 @@ p {
   font-family: 'Open Sans Condensed', sans-serif; 
   width: 80%;
 /*	maximum-height: 50px;*/
+	overflow-y: auto;
+/*  height: 50px;*/
 }
 
 .roof {
