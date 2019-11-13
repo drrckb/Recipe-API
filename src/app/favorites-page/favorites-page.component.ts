@@ -7,7 +7,7 @@ import { FavoritesService } from '../favorites.service';
   styleUrls: ['./favorites-page.component.css']
 })
 export class FavoritesPageComponent implements OnInit {
-
+	
   favorites: any[];
 
   constructor(private favoritesService: FavoritesService) { }

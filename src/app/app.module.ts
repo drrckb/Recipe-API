@@ -15,6 +15,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatIconModule } from '@angular/material/icon';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ApiService } from './api.service';
@@ -54,7 +55,8 @@ import 'hammerjs';
 	MatDialogModule,
 	MatToolbarModule,
 	MatListModule,
-	MatRadioModule
+	MatRadioModule,
+	MatIconModule
   ],
   providers: [ ApiService, SearchService, FavoritesService ],
   bootstrap: [AppComponent]

@@ -1,4 +1,50 @@
+body {
+	padding-left: 50px;
+	padding-right: 50px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
 
+.component-container {
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+}
+
+span {
+ margin-top: 10px;
+ color: black;
+ font-family: ‘Open Sans Condensed’, sans-serif;
+ font-size: 20px;
+}
+
+.result {
+ font-size: 30px;
+}
+
+.recipe-results-container {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-content: center;	
+	} 
+
+.cat-box {
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}	
+	
+	
+/* margin-left: 100px;*/
+	
+
+
+
+/*
 .component-container {
   display:flex;
   justify-content: center;
@@ -18,3 +64,4 @@ p {
   display: flex;
   flex-wrap: wrap;
 }
+*/

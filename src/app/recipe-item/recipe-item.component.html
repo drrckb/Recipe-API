@@ -20,15 +20,22 @@
 <mat-card class="recipe-container">
   <mat-card-header>
     <mat-card-title></mat-card-title>
+	  <div class="roof"></div>
   </mat-card-header>
   <img mat-card-image src="{{ recipe.image }}" alt="picture of {{ recipe.label }}" (click)="goToRecipeInfo()">
   <mat-card-content>
-    <p>{{ recipe.label }}</p>
+    <p class="title">{{ recipe.label }}</p>
     <p>Serves {{ recipe.yield }}</p>
   </mat-card-content>
   <mat-card-actions>
+	  <button mat-icon-button aria-label="fav" class="fas"
+		 [ngClass]="{ 'fa-trash': favorites.contains(recipe), 'fa-heart': !favorites.contains(recipe) }"
+          (click)="toggleFavorite()"></button>
+	
+<!--
     <button mat-button class="fas"
 		 [ngClass]="{ 'fa-trash': favorites.contains(recipe), 'fa-heart': !favorites.contains(recipe) }"
           (click)="toggleFavorite()"></button>
+-->
   </mat-card-actions>
 </mat-card>

@@ -1,10 +1,12 @@
 body {
-	vh: 100%;
+	height: 600px;
 	margin: 0;
 }
 .info-container {
-  max-width: 400px;
+  max-width: 350px;
   height: 80%;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .card-container {
@@ -13,4 +15,76 @@ body {
 	align-content: center;
 	justify-content: center;
 	
+}
+
+.ingredients-list {
+	margin-left: -10px;
+
+}
+
+mat-card {
+	height: 600px;
+	padding: 20px;
+/*
+	align-content: center;
+	justify-content: center;
+*/
+}
+
+mat-card-header {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+mat-card-title {
+	margin-bottom: 0px;
+	color: #F34032;
+}
+
+/*
+h3 {
+	color: #F34032;
+}
+*/
+
+mat-card-subtitle {
+	margin-left: 0px;
+}
+
+img {
+	height: 300px;
+	border-radius: 5px;	
+	width: 100%;
+	padding: 10px;
+	
+}
+
+.image {
+	margin-top: 10px;
+	text-align: center;
+	align-content: center;
+}
+
+mat-card-actions {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: #F34032;
+}
+
+.tag {
+	margin-left: 10px;
+	font-size: 11px;
+	color: black;
+	list-style: none;
+}
+
+.tags {
+	font-size: 10px;
+	list-style: none;
+	color: dimgrey;
 }

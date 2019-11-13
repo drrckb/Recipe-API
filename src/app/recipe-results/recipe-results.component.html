@@ -1,8 +1,11 @@
 <!-- Results Page -->
 
 <div class="component-container">
-    <p class="result">Results</p>
-    <p *ngIf="recipeResults.length === 0">Nothing to see here</p>
+<!--    <p class="result">Results</p>-->
+	<div class="cat-box">
+	<img *ngIf="recipeResults.length === 0" src="assets/cat_hungry.png" alt="hungry-cat">
+    <span *ngIf="recipeResults.length === 0">Nothing to see here</span>
+	</div>
     <div class="recipe-results-container">
         <recipe-item *ngFor="let recipe of recipeResults" [recipe]="recipe"></recipe-item>
     </div>

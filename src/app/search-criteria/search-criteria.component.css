@@ -8,6 +8,10 @@ body {
 	margin: 0;
 }
 
+.nav-logo {
+    display: none!important;
+}
+
 form {
     display: flex;
     justify-content: center;
@@ -38,6 +42,7 @@ form {
 	margin-right: auto;
 }
   
+/*
   mat-form-field {
     width: 450px;
   } ::ng-deep .mat-form-field-empty.mat-form-field-label {
@@ -49,6 +54,32 @@ form {
         } ::ng-deep.mat-form-field-ripple {
             background-color: #DF7039 !important;
           }  
+*/
+
+mat-form-field {
+   width: 450px;
+   color: #DF7039;
+   text-align: center;
+ } ::ng-deep .mat-form-field-empty.mat-form-field-label {
+     color: #BFBFBF;
+   } ::ng-deep .mat-focused .mat-form-field-label {
+       color: #0760B4 !important;
+       text-align: left;
+     } ::ng-deep.mat-form-field-underline {
+         background-color: #DF7039 !important;
+       } ::ng-deep.mat-form-field-ripple {
+           background-color: #0760B4  !important;
+         }
+
+mat-radio-button {
+   color: #DF7039;
+ } ::ng-deep .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element {
+     background-color: #F34032 !important;    
+   } ::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle {
+       background-color: #F34032!important;   
+     } ::ng-deep.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+         border-color:#F34032!important; 
+       }
   
   .droplist {
     color: #0760B4

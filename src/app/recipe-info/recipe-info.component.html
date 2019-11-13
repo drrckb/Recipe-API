@@ -5,15 +5,17 @@
   <mat-card-header>
 <!--    <div mat-card-avatar class="example-header-image"></div>-->
     <mat-card-title>{{ recipe.label }}</mat-card-title>
-    <mat-card-subtitle>Serves {{ recipe.yield }}</mat-card-subtitle>
+<!--    <mat-card-subtitle>Serves {{ recipe.yield }}</mat-card-subtitle>-->
   </mat-card-header>
+	<div class="image">
   <img mat-card-image src="{{ recipe.image }}" alt="picture of {{ recipe.label }}">
+		</div>
   <mat-card-content>
     <p>
-      Calories per serving: {{ (recipe.calories / recipe.yield).toFixed(0) }}
+      Calories per serving: {{ (recipe.calories / recipe.yield).toFixed(0) }} / Serves {{ recipe.yield }}
     </p>
-	  <li>Tags: 
-        <span *ngFor="let tag of recipe.healthLabels; index as i"><span *ngIf="i !== 0">, </span>{{tag}}</span>
+	  <li class="tag">Tags: 
+        <span class="tags" *ngFor="let tag of recipe.healthLabels; index as i"><span *ngIf="i !== 0">, </span>{{tag}}</span>
       </li>
 	  <h3>Ingredients</h3>
     <ul class="ingredients-list">
@@ -21,7 +23,7 @@
     </ul>
   </mat-card-content>
   <mat-card-actions>
-     <a href="{{ recipe.url }}">Original Recipe</a>
+     <button mat-button><a href="{{ recipe.url }}">Original Recipe</a></button>
   </mat-card-actions>
 </mat-card>
 	</div>

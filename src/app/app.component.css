@@ -13,3 +13,10 @@ a {
 	margin-right: 20px;
 }
 
+a.is-active {
+	color: #DF7039;
+}
+
+img {
+	z-index: 20;
+}

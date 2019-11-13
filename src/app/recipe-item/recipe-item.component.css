@@ -4,8 +4,8 @@
 .recipe-container {
     border-radius: 5px;
     margin: 10px;
-    height: 280px;
-    width: 160px;
+    height: 300px;
+    width: 175px;
     box-shadow: 3px 3px 6px black;
     position: relative;
     display: flex;
@@ -14,22 +14,27 @@
     justify-content: space-around;
 }
 
+.title {
+	color: #F34032;
+}
+
 .fas {
     font-size: 15px;
     color: #F34032;
     cursor: pointer; 
     position: absolute;
-    bottom: 0;
+    bottom: -8px;
     right: 15px;
     transform: translate(50%, -25%);
 }
 
 img {
-  width: 100%;
-  height: 50%;
-  border-radius: 10px;
-  padding: 20px;
   cursor: pointer;
+    max-width: 150px;
+    max-height: 200px;
+    border-radius: 5px;
+    display: flex;
+    margin-left: 10px;
 }
 
 /*
@@ -40,23 +45,26 @@ img {
 }
 */
 
-mat-button {
-	width: 8px;
-}
 
 
 mat-card-content {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-between;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	height: 80%;
-	width: 80%;
+	width: 85%;
 }
 
 p {
   color: black;
-  margin: 10px;
-  padding-left: 10px; 
-  font-family: 'Open Sans Condensed', sans-serif 
+  margin-top: 5px;
+/*  padding: 8px; */
+  font-family: 'Open Sans Condensed', sans-serif; 
+  width: 80%;
+}
+
+.roof {
+	position: fixed;
+	height: 10px;
 }
