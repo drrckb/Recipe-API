@@ -14,7 +14,7 @@ export class SearchCriteriaComponent implements OnInit {
   dietOptions: any[] = [
 	{ name: "Vegetarian", value: "vegetarian" },
     { name: "Vegan", value: "vegan" },
-    { name: "Peanuts", value: "peanut-free" },
+    { name: "Peanut-free", value: "peanut-free" },
     { name: "Sugar-conscious", value: "sugar-conscious" },
     { name: "Low-Carb", value: "low-carb" }
   ];
