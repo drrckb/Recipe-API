@@ -1,11 +1,12 @@
 body {
-/*
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	align-items: center;
-*/
 	margin: 0;
+}
+
+.form-box {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .nav-logo {
@@ -42,19 +43,6 @@ form {
 	margin-right: auto;
 }
   
-/*
-  mat-form-field {
-    width: 450px;
-  } ::ng-deep .mat-form-field-empty.mat-form-field-label {
-      color: #BFBFBF;
-    } ::ng-deep .mat-focused .mat-form-field-label {
-        color: #DF7039 !important;
-      } ::ng-deep.mat-form-field-underline {
-          background-color: #0760B4 !important;
-        } ::ng-deep.mat-form-field-ripple {
-            background-color: #DF7039 !important;
-          }  
-*/
 
 mat-form-field {
    width: 450px;

@@ -23,39 +23,20 @@
     color: #F34032;
     cursor: pointer; 
     position: absolute;
-    bottom: -8px;
+    bottom: -10px;
     right: 15px;
     transform: translate(50%, -25%);
 }
 
 img {
-  cursor: pointer;
+    cursor: pointer;
     max-width: 150px;
     max-height: 200px;
     border-radius: 5px;
     display: flex;
-    margin-left: 10px;
+    margin-left: 12px;
 	
 }
-
-
-/*
-img[_ngcontent-qel-c5] {
-    height: 300px;
-    border-radius: 5px;
-    width: 100%;
-    padding: 0px;
-}
-*/
-
-/*
-::ng-deep .mat-button{
-    height:10px !important;
-    width:10px !important;
-    font-size:10px !important;
-}
-*/
-
 
 
 mat-card-content {
@@ -71,15 +52,12 @@ mat-card-content {
 p {
   color: black;
   margin-top: 5px;
-/*  padding: 8px; */
   font-family: 'Open Sans Condensed', sans-serif; 
-  width: 80%;
-/*	maximum-height: 50px;*/
-	overflow-y: auto;
-/*  height: 50px;*/
+  width: 100%;
+  overflow-y: auto;
 }
 
 .roof {
-	position: fixed;
-	height: 10px;
+  position: fixed;
+  height: 10px;
 }

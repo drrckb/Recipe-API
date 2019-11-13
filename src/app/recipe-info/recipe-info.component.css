@@ -2,11 +2,12 @@ body {
 	height: 600px;
 	margin: 0;
 }
+
 .info-container {
-  max-width: 350px;
-  height: 80%;
-  margin-top: 30px;
-  margin-bottom: 30px;
+    max-width: 350px;
+    height: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .card-container {
@@ -19,16 +20,12 @@ body {
 
 .ingredients-list {
 	margin-left: -10px;
-
 }
 
 mat-card {
 	height: 600px;
 	padding: 20px;
-/*
-	align-content: center;
-	justify-content: center;
-*/
+	box-shadow: 3px 3px 6px black;
 }
 
 mat-card-header {
@@ -43,11 +40,6 @@ mat-card-title {
 	color: #F34032;
 }
 
-/*
-h3 {
-	color: #F34032;
-}
-*/
 
 mat-card-subtitle {
 	margin-left: 0px;
@@ -57,12 +49,11 @@ mat-card-subtitle {
 	height: 300px;
 	border-radius: 5px;	
 	width: 100%;
-	padding: 10px;
-	
+/*	padding: 10px;*/
 }
 
 .image {
-	margin-top: 10px;
+	margin-top: 20px;
 	text-align: center;
 	align-content: center;
 }

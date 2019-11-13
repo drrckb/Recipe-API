@@ -38,30 +38,3 @@ span {
 	flex-direction: column;
 }	
 	
-	
-/* margin-left: 100px;*/
-	
-
-
-
-/*
-.component-container {
-  display:flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-p {
-  color: white;
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-
-.result {
-  font-size:30px;
-}
-
-.recipe-results-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-*/
