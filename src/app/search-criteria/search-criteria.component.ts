@@ -19,6 +19,14 @@ export class SearchCriteriaComponent implements OnInit {
     { name: "Low-Carb", value: "low-carb" }
   ];
 
+	
+//	showSpinner = false;
+//	
+//	loadData() {
+//		this.showSpinner = true;
+//	}
+	
+	
   panelOpenState = false;
   accordionList: any;
  

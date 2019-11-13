@@ -1,7 +1,7 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 <header>
-	<mat-toolbar class="nav"><a [routerLink]="['/search']" [routerLinkActive]="'is-active'"><mat-icon aria-hidden="false" aria-label="home">home</mat-icon></a><img src="assets/omnomnom-2.png" *ngIf="routerLinkActive === '/search'" alt="omnomnom logo"><a [routerLink]="['/favorites']" [routerLinkActive]="'is-active'"><mat-icon aria-hidden="false" aria-label="favorite">favorite</mat-icon></a></mat-toolbar>
+	<mat-toolbar class="nav"><a [routerLink]="['/search']" [routerLinkActive]="'is-active'"><mat-icon aria-hidden="false" aria-label="home">home</mat-icon></a><img src="assets/omnomnom-2.png" *ngIf="router.url != '/search'" alt="omnomnom logo"><a [routerLink]="['/favorites']" [routerLinkActive]="'is-active'"><mat-icon aria-hidden="false" aria-label="favorite">favorite</mat-icon></a></mat-toolbar>
 <!--	<img src="assets/omnomnom.png" alt="logo">-->
 <!--
 	<nav>
@@ -10,5 +10,6 @@
   </nav>
 -->
 </header>
+<loader></loader>
 <router-outlet></router-outlet>
 

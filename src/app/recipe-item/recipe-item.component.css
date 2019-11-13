@@ -35,7 +35,18 @@ img {
     border-radius: 5px;
     display: flex;
     margin-left: 10px;
+	
 }
+
+
+/*
+img[_ngcontent-qel-c5] {
+    height: 300px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 0px;
+}
+*/
 
 /*
 ::ng-deep .mat-button{
@@ -62,6 +73,7 @@ p {
 /*  padding: 8px; */
   font-family: 'Open Sans Condensed', sans-serif; 
   width: 80%;
+/*	maximum-height: 50px;*/
 }
 
 .roof {

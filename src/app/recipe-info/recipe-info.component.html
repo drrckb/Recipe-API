@@ -1,5 +1,8 @@
 <!-- Recipe Breakdown -->
-<p *ngIf="!recipe">Recipe not found :(</p>
+<div *ngIf="!recipe" class="cat-box">
+	<img *ngIf="!recipe" src="assets/cat_hungry.png" alt="hungry-cat">
+    <span *ngIf="!recipe">Nothing to see here</span>
+	</div>
 <div class="card-container">
 <mat-card *ngIf="recipe" class="info-container">
   <mat-card-header>
@@ -8,7 +11,7 @@
 <!--    <mat-card-subtitle>Serves {{ recipe.yield }}</mat-card-subtitle>-->
   </mat-card-header>
 	<div class="image">
-  <img mat-card-image src="{{ recipe.image }}" alt="picture of {{ recipe.label }}">
+  <img class="img" mat-card-image src="{{ recipe.image }}" alt="picture of {{ recipe.label }}">
 		</div>
   <mat-card-content>
     <p>

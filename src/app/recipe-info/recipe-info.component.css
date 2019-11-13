@@ -53,7 +53,7 @@ mat-card-subtitle {
 	margin-left: 0px;
 }
 
-img {
+.img {
 	height: 300px;
 	border-radius: 5px;	
 	width: 100%;
@@ -87,4 +87,12 @@ a {
 	font-size: 10px;
 	list-style: none;
 	color: dimgrey;
+}
+
+.cat-box {
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
