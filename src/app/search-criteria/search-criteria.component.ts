@@ -20,12 +20,6 @@ export class SearchCriteriaComponent implements OnInit {
   ];
 
 	
-//	showSpinner = false;
-//	
-//	loadData() {
-//		this.showSpinner = true;
-//	}
-	
 	
   panelOpenState = false;
   accordionList: any;
@@ -71,7 +65,6 @@ export class SearchCriteriaComponent implements OnInit {
   }
 
   searchRecipes(form) {
-    //console.log(form.value);
     this.search.setOptions(form.value);
 
     this.router.navigate(["recipe-results"]);

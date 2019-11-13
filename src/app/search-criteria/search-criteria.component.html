@@ -20,20 +20,7 @@
             Diet Labels
           </mat-panel-title>
         </mat-expansion-panel-header>
-    
-		  
-		  
-		
-			  
-<!--
-		  <mat-selection-list [(ngModel)]="dietaryRestriction" name="dietaryRestriction">
-  <mat-list-option *ngFor="let option of dietOptions" [value]="option.value">
-    {{ option.name }}
-  </mat-list-option>
-</mat-selection-list>
--->
-
-		  
+    	  
 		  
 <mat-radio-group
 	[(ngModel)]="dietaryRestriction"
@@ -45,66 +32,7 @@ aria-labelledby="diet-restrictions"
   </mat-radio-button>
 </mat-radio-group>
 
-	  
-		  
-		  
-		  
-<!--
-		  <mat-form-field>
-  <mat-label>Dietary Restriction</mat-label>
-  <mat-select [(ngModel)]="dietaryRestriction" name="dietaryRestriction">
-    <mat-option *ngFor="let option of dietOptions" [value]="option.value">
-      {{option.name}}
-    </mat-option>
-  </mat-select>
-</mat-form-field>
--->
-		  
-		  
-<!--
-		   <div class="diets">
-          <mat-checkbox *ngFor="let option of dietOptions" [value]="option.value">{{option.name}}</mat-checkbox>
-        </div>
--->
-		  
-		  
-		  
-<!--		  [(ngModel)]="dietaryRestriction"-->
-		  
-<!--
-        <div class="diets">
-          <mat-checkbox [value]="dairy-free" name="dairy-free">
-          <span class="diet-title">Dairy-Free</span>
-            <span class="diet-info">No dairy, no lactose</span>
-          </mat-checkbox>
-        </div>
-        <div class="diets">
-          <mat-checkbox [value]="gluten-free" name="gluten-free">
-          <span class="diet-title">Gluten-Free</span>
-            <span class="diet-info">No ingredients containing gluten</span>
-          </mat-checkbox>
-        </div>
-        <div class="diets">
-          <mat-checkbox [value]="vegetarian" name="vegetarian">
-          <span class="diet-title">Vegetarian</span>
-            <span class="diet-info">No meat, poultry, or fish</span>
-          </mat-checkbox>
-        </div>
-        <div class="diets">
-          <mat-checkbox [value]="vegan" name="vegan">
-          <span class="diet-title">Vegan</span>
-            <span class="diet-info">No meat, poultry, fish, dairy, eggs, or honey</span>
-          </mat-checkbox>
-        </div>
-        <div class="diets">
-          <mat-checkbox [value]="low-carb" name="low-carb">
-          <span class="diet-title">Low-Carb</span>
-            <span class="diet-info">Less than 20% of total calories from carbs</span>
-          </mat-checkbox>
-        </div>
--->
-     
-    
+
       </mat-expansion-panel>
       <mat-expansion-panel>
         <mat-expansion-panel-header>
@@ -125,7 +53,6 @@ aria-labelledby="diet-restrictions"
         max="2000"
 		value="1"			
         ></mat-slider>
-<!--     (input)="minCalories($event)"-->
        
       </mat-expansion-panel>
     </mat-accordion>

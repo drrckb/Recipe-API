@@ -14,7 +14,7 @@ export class ApiService {
 
   getData(options: SearchInterface) {
     
-    let searchUrl = this.apiUrl + `?q=${options.searchWord}&app_id=${this.appid}&app_key=${this.apikey}&to=25`;
+    let searchUrl = this.apiUrl + `?q=${options.searchWord}&app_id=${this.appid}&app_key=${this.apikey}&to=24`;
 
     
     if (options.dietaryRestriction) {
@@ -25,26 +25,6 @@ export class ApiService {
 	  if (options.minCalories) {
        searchUrl += `&calories=${options.minCalories}`;
 	  }
-//    if (options.minCalories || options.maxCalories) {
-//      let caloriesUrl = "&calories=";
-//
-//      if (options.minCalories) { 
-//        caloriesUrl += options.minCalories.toString();
-//
-//        if (!options.maxCalories) {
-//          caloriesUrl += "+";
-//        } else {
-//          caloriesUrl += "-"; 
-//        }
-//      }
-//
-//      if (options.maxCalories) {
-//        caloriesUrl += options.maxCalories.toString();
-//      }
-//
-//      searchUrl += caloriesUrl;
-//    }
-
 
     return this.http.get(searchUrl);
   }

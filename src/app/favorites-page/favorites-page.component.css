@@ -29,19 +29,7 @@ component-container {
 	flex-direction: column;
 }
 
-/*
-.component-container {
-  display: flex;
-  justify-content: center;
-  flex-flow: row; 
-}
 
-p {
-	
-  color: white;
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-*/
 
 
 
